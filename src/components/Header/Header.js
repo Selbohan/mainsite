@@ -1,16 +1,39 @@
-import Link from 'next/link';
-import React from 'react';
-import { AiFillGithub, AiFillHome, AiFillInstagram, AiFillLinkedin, AiOutlineHome, AiOutlineLoading, AiTwotoneHome } from 'react-icons/ai';
-import {ImSpinner9 } from "react-icons/im";
+import Link from "next/link";
+import React from "react";
+import {
+  AiFillGithub,
+  AiFillHome,
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiOutlineHome,
+  AiOutlineLoading,
+  AiTwotoneHome,
+} from "react-icons/ai";
+import { ImSpinner9 } from "react-icons/im";
 
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
+import {
+  Container,
+  Div1,
+  Div2,
+  Div3,
+  NavLink,
+  SocialIcons,
+  Span,
+} from "./HeaderStyles";
 
-const Header = () =>  (
+const Header = () => (
   <Container>
     <Div1>
       <Link href="/">
-        <a style={{display:"flex",alignItems:"center",color:"white",marginBottom:"20px"}}>
-          <ImSpinner9 size="2rem"/> <Span>&nbsp;&nbsp;Furkan Hasan Yavuz</Span>
+        <a
+          style={{
+            display: "flex",
+            alignItems: "center",
+            color: "white",
+            marginBottom: "20px",
+          }}
+        >
+          <ImSpinner9 size="2rem" /> <Span>&nbsp;&nbsp;Furkan Yavuz</Span>
         </a>
       </Link>
     </Div1>
@@ -32,13 +55,19 @@ const Header = () =>  (
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href="https://github.com/Selbohan">
+      <SocialIcons
+        target="_blank"
+        href="https://github.com/The-Umbra?tab=repositories"
+      >
         <AiFillGithub size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://www.linkedin.com/in/furkanhyavuz/">
+      <SocialIcons
+        target="_blank"
+        href="https://www.linkedin.com/in/furkanhyavuz/"
+      >
         <AiFillLinkedin size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://www.instagram.com/yavuz_san13">
+      <SocialIcons target="_blank" href="https://www.instagram.com/furkanyvzx">
         <AiFillInstagram size="3rem" />
       </SocialIcons>
     </Div3>

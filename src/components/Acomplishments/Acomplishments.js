@@ -1,12 +1,16 @@
-import React from 'react';
+import React from "react";
 
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
+import {
+  Section,
+  SectionDivider,
+  SectionTitle,
+} from "../../styles/GlobalComponents";
+import { Box, Boxes, BoxNum, BoxText } from "./AcomplishmentsStyles";
 
 const data = [
-  { number: 10, text: 'Open Source Projects'},
-  { number: 25, text: 'Certificate', },
-  { number: 1, text: 'Keep Evolving', },
+  { number: 20, text: "Open Source Projects" },
+  { number: 30, text: "Certificate" },
+  { number: 1, text: "Keep Evolving" },
 ];
 
 const Acomplishments = () => (
@@ -20,7 +24,7 @@ const Acomplishments = () => (
         </Box>
       ))}
     </Boxes>
-    <SectionDivider/>
+    <SectionDivider />
   </Section>
 );
 
